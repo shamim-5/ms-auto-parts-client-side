@@ -2,12 +2,13 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home/Home";
 import Navbar from "./Pages/Shared/Navbar";
-import bg_image from "./assets/bg-photo/bg.png";
+import Footer from "./Pages/Shared/Footer";
 
 function App() {
   const styles = {
     header: {
-      backgroundImage: `url(${bg_image})`,
+      backgroundImage:
+        "url(https://res.cloudinary.com/dskmjlma4/image/upload/v1653235495/manufacturer-website-assignment/assets/bg-photo/bg_cusibk.png)",
       height: "100vh",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat",
@@ -18,7 +19,7 @@ function App() {
       height: "100%",
       overflow: "auto",
       width: "100%",
-      backgroundColor: "rgba(0, 0, 0, 0.3)",
+      backgroundColor: "rgba(0, 0, 0, 0.2)",
     },
   };
   return (
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </div>
     </div>
   );

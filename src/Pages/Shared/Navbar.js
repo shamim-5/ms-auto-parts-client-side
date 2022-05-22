@@ -93,7 +93,7 @@ const Navbar = () => {
         </div>
       </div>
       <hr />
-      <div className="navbar sticky top-0">
+      <div className="navbar">
         <div className="navbar-start">
           <img style={{ width: "50px" }} src={logo} alt="header-logo" />
           <Link to="/" className="btn btn-ghost normal-case text-xl">
