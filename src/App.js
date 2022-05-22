@@ -16,6 +16,7 @@ function App() {
 
     content: {
       height: "100%",
+      overflow: "auto",
       width: "100%",
       backgroundColor: "rgba(0, 0, 0, 0.3)",
     },
