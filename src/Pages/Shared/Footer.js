@@ -4,13 +4,7 @@ import logo from "../../assets/icon/logo_2.png";
 const Footer = () => {
   return (
     <div className="py-12">
-      <div className="divide-x text-sm text-white md:text-2xl  border border-[#6d6d6d] flex flex-row justify-around items-center uppercase">
-        <div className="md:px-16 md:py-12">drivilux</div>
-        <div className="md:px-16 md:py-12">autopartse</div>
-        <div className="md:px-16 md:py-12">wheelbu</div>
-        <div className="md:px-16 md:py-12">motorks</div>
-        <div className="md:px-16 md:py-12">drivery</div>
-      </div>
+      
       <div className="md:py-16 py-6">
         <div className="text-sm text-white md:text-xl  grid md:grid-cols-5 grid-cols-1 uppercase">
           <div>
