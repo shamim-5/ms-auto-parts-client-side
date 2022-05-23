@@ -6,8 +6,8 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
-        <Link className="pr-0 pl-3" to="/shop">
-          Shop Parts
+        <Link className="pr-0 pl-3" to="/spare">
+          Spare Parts
         </Link>
       </li>
       <li>
