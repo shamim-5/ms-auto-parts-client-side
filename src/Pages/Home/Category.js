@@ -1,5 +1,5 @@
 import React from "react";
-import TransprentButton from "../Shared/TransparentButton";
+import TransparentButton from "../Shared/TransparentButton";
 
 const Category = () => {
   return (
@@ -10,7 +10,7 @@ const Category = () => {
             <h2 className="text-4xl">Shop by Category</h2>
           </div>
           <div className="flex-none">
-            <TransprentButton>{"Shop"}</TransprentButton>
+            <TransparentButton>{"Shop"}</TransparentButton>
           </div>
         </div>
         <div className="grid md:grid-cols-4 grid-cols-1 gap-8 py-6">

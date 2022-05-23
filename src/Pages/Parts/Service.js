@@ -2,6 +2,7 @@ import React from "react";
 
 const Service = ({ service }) => {
   const { name, img, details, quantity, available, price } = service;
+  
   return (
     <div>
       <div className="card card-compact w-50  shadow-xl rounded-none">
@@ -22,7 +23,7 @@ const Service = ({ service }) => {
               Price:<span className="font-normal"> ${price}</span>
               <span className="text-sm font-thin text-[#cbd5e1]"> / Piece</span>
             </h3>
-            <button className="btn btn-primary">Purchase</button>
+            <button className="btn btn-primary bg-transparent border-white">Purchase</button>
           </div>
         </div>
       </div>
