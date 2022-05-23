@@ -24,7 +24,7 @@ function App() {
   };
   return (
     <div style={styles.header} className="bg-[#000000]">
-      <div style={styles.content} className="text-white text-xl container">
+      <div style={styles.content} className="text-white text-xl">
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />

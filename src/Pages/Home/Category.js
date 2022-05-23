@@ -3,8 +3,8 @@ import TransprentButton from "../Shared/TransparentButton";
 
 const Category = () => {
   return (
-    <div>
-      <div className="text-white py-6">
+    <div className="container">
+      <div className="text-white py-12">
         <div className="flex flex-row">
           <div className="flex-1">
             <h2 className="text-4xl">Shop by Category</h2>
@@ -23,10 +23,6 @@ const Category = () => {
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl">Wheels {"&"} Rims</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Purchase</button>
-              </div>
             </div>
           </div>
           <div className="card card-compact w-50  shadow-xl rounded-none">
@@ -38,10 +34,6 @@ const Category = () => {
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl">Engine</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Purchase</button>
-              </div>
             </div>
           </div>
           <div className="card card-compact w-50  shadow-xl rounded-none">
@@ -54,10 +46,6 @@ const Category = () => {
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl">Vehicle Body Parts</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Purchase</button>
-              </div>
             </div>
           </div>
           <div className="card card-compact w-50  shadow-xl rounded-none">
@@ -70,10 +58,6 @@ const Category = () => {
             </figure>
             <div className="card-body">
               <h2 className="card-title text-2xl">Accessories</h2>
-              <p>If a dog chews shoes whose shoes does he choose?</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Purchase</button>
-              </div>
             </div>
           </div>
         </div>

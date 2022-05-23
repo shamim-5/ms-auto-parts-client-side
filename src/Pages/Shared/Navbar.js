@@ -34,7 +34,7 @@ const Navbar = () => {
   );
 
   return (
-    <div>
+    <div className="container">
       <div className="pt-4 ">
         <div className="navbar flex-col-reverse md:flex-row flex justify-between">
           <div className="">
@@ -97,7 +97,7 @@ const Navbar = () => {
         <div className="navbar-start">
           <img style={{ width: "50px" }} src={logo} alt="header-logo" />
           <Link to="/" className="btn btn-ghost normal-case text-xl">
-            MS Car Parts
+            MS Auto Parts
           </Link>
         </div>
         <div className="navbar-end ">

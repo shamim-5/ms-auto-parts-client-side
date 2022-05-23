@@ -3,8 +3,7 @@ import logo from "../../assets/icon/logo_2.png";
 
 const Footer = () => {
   return (
-    <div className="py-12">
-      
+    <div className="container py-12 ">
       <div className="md:py-16 py-6">
         <div className="text-sm text-white md:text-xl  grid md:grid-cols-5 grid-cols-1 uppercase">
           <div>
@@ -120,7 +119,7 @@ const Footer = () => {
       </div>
       <hr className="text-[#6d6d6d]" />
       <p className="text-center pt-6">
-        <small>Copyright © 2022 - MS Car Parts All right reserved</small>
+        <small>Copyright © 2022 - MS Auto Parts All right reserved</small>
       </p>
     </div>
   );
