@@ -1,20 +1,25 @@
+import { signOut } from "firebase/auth";
 import React from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { Link } from "react-router-dom";
 import logo from "../../assets/icon/logo_2.png";
+import auth from "../../firebase.init";
 
 const Navbar = () => {
+  const [user] = useAuthState(auth);
+
+  const logout = () => {
+    signOut(auth);
+  };
+
   const menuItems = (
     <>
       <li>
         <Link className="pr-0 pl-3" to="/spare">
-          Spare Parts
+          Parts
         </Link>
       </li>
-      <li>
-        <Link className="pr-0 pl-3" to="/wholesale">
-          Wholesale
-        </Link>
-      </li>
+
       <li>
         <Link className="pr-0 pl-3" to="/review">
           Review
@@ -30,9 +35,19 @@ const Navbar = () => {
           Blogs
         </Link>
       </li>
+      <li>
+        {user ? (
+          <Link className="pr-0 pl-3" to="/signup">
+            Signed
+          </Link>
+        ) : (
+          <Link className="pr-0 pl-3" to="/signup">
+            Sign{"\u00a0"}Up
+          </Link>
+        )}
+      </li>
     </>
   );
-
   return (
     <div className="container">
       <div className="pt-4 ">
@@ -52,24 +67,40 @@ const Navbar = () => {
             </div>
             <div className="dropdown dropdown-end ml-6">
               <div className="flex flex-row items-center ">
-                <div>
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-6 w-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-                    />
-                  </svg>
-                </div>
+                {user ? (
+                  <>
+                    <img className="h-6 w-6 rounded-full" src={user?.photoURL} alt="" />
+                  </>
+                ) : (
+                  <div>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                      />
+                    </svg>
+                  </div>
+                )}
                 <div className="text-xl mx-3">
-                  <p className="capitalize">Log{"\u00a0"}in</p>
+                  <li className="list-none">
+                    {user ? (
+                      <Link to="login" onClick={logout} className="capitalize">
+                        Log{"\u00a0"}out
+                      </Link>
+                    ) : (
+                      <Link to="login" className="capitalize">
+                        Log{"\u00a0"}in
+                      </Link>
+                    )}
+                  </li>
                 </div>
                 <div>
                   <svg

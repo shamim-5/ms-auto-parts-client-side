@@ -6,6 +6,8 @@ import Footer from "./Pages/Shared/Footer";
 import Reviews from "./Pages/Home/Reviews";
 import Premium from "./Pages/Home/Premium";
 import SpareParts from "./Pages/SpareParts/SpareParts";
+import Login from "./Pages/Login/Login";
+import SignUp from "./Pages/Login/SignUp";
 
 function App() {
   const styles = {
@@ -34,6 +36,8 @@ function App() {
           <Route path="review" element={<Reviews />} />
           <Route path="premium" element={<Premium />} />
           <Route path="spare" element={<SpareParts />} />
+          <Route path="login" element={<Login />} />
+          <Route path="signup" element={<SignUp />} />
         </Routes>
         <Footer />
       </div>
