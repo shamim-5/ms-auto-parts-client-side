@@ -10,8 +10,8 @@ const Service = ({ service }) => {
         </figure>
         <div className="card-body text-[#cbd5e1]">
           <h2 className="card-title text-2xl text-[#cbd5e1]">{name}</h2>
-          <p className="text-[#cbd5e1]">{details}</p>
-          <div className="text-lg pb-2 font-thin">
+          <p className="text-[#cbd5e1] text-xs">{details}</p>
+          <div className="text-normal pb-2 font-thin">
             <h3>Available Quantity: {available} Piece/Pieces</h3>
             <h3>Min. Order: {quantity} Pieces</h3>
           </div>
