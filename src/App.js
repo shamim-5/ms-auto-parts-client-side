@@ -4,6 +4,7 @@ import Home from "./Pages/Home/Home";
 import Navbar from "./Pages/Shared/Navbar";
 import Footer from "./Pages/Shared/Footer";
 import Reviews from "./Pages/Home/Reviews";
+import Premium from "./Pages/Home/Premium";
 
 function App() {
   const styles = {
@@ -30,6 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="review" element={<Reviews />} />
+          <Route path="premium" element={<Premium />} />
         </Routes>
         <Footer />
       </div>

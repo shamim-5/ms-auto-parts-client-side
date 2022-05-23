@@ -4,6 +4,7 @@ import Category from "./Category";
 import Services from "../Parts/Services";
 import Reviews from "./Reviews";
 import Summery from "./Summery";
+import Premium from "./Premium";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Services />
       <Reviews />
       <Summery />
+      <Premium />
       <Category />
 
     </div>
