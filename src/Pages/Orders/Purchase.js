@@ -1,11 +1,15 @@
 import React, { useEffect, useState } from "react";
+import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
+import auth from "../../firebase.init";
 import PrimaryButton from "../Shared/PrimaryButton";
+import PurchaseModal from "./PurchaseModal";
 
 const Purchase = () => {
   const { id } = useParams();
   const [service, setService] = useState({});
   const { name, img, details, quantity, available, price } = service;
+  const [user] = useAuthState(auth);
 
   useEffect(() => {
     fetch(`http://localhost:5000/service/${id}`)
@@ -13,12 +17,11 @@ const Purchase = () => {
       .then((data) => setService(data));
   }, []);
 
-  console.log(service);
   return (
     <div className="container py-6">
       <h2 className="text-4xl text-center">Confirm Purchase</h2>
-      <div class="hero bg-transparent my-4">
-        <div class="hero-content flex-col lg:flex-row">
+      <div className="hero bg-transparent my-4">
+        <div className="hero-content flex-col lg:flex-row">
           <img className="md:w-2/6" src={img} alt="" />
           <div className="md:w-1/2">
             <h2 className="card-title text-2xl text-[#cbd5e1]">{name}</h2>
@@ -32,11 +35,16 @@ const Purchase = () => {
               Price:<span className="font-normal"> ${price}</span>
               <span className="text-sm font-thin text-[#cbd5e1]"> / Piece</span>
             </h3>
-                
-            <PrimaryButton>Confirm Order</PrimaryButton>
+            <label
+              htmlFor="purchase-modal"
+              className="btn bg-gradient-to-tr from-primary to secondary hover:bg-transparent w-full max-w-xs text-white"
+            >
+              Confirm Order
+            </label>
           </div>
         </div>
       </div>
+      <PurchaseModal user={user} name={name}></PurchaseModal>
     </div>
   );
 };

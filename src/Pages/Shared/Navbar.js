@@ -12,7 +12,6 @@ const Navbar = () => {
     signOut(auth);
   };
 
-  console.log(user);
   const menuItems = (
     <>
       <li>
