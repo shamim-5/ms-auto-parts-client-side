@@ -10,6 +10,7 @@ import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/Login/SignUp";
 import Purchase from "./Pages/Orders/Purchase";
 import RequireAuth from "./Pages/Login/RequireAuth"
+import Blogs from "./Pages/Shared/Blogs/Blogs";
 
 function App() {
   const styles = {
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="review" element={<Reviews />} />
+          <Route path="blogs" element={<Blogs />} />
           <Route path="premium" element={<Premium />} />
           <Route path="spare" element={<SpareParts />} />
           <Route path="login" element={<Login />} />

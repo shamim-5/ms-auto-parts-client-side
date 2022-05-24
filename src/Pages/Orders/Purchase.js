@@ -3,6 +3,7 @@ import { useAuthState } from "react-firebase-hooks/auth";
 import { useParams } from "react-router-dom";
 import auth from "../../firebase.init";
 import PrimaryButton from "../Shared/PrimaryButton";
+import HandleQuantity from "./HandleQuantity";
 import PurchaseModal from "./PurchaseModal";
 
 const Purchase = () => {
@@ -27,14 +28,15 @@ const Purchase = () => {
             <h2 className="card-title text-2xl text-[#cbd5e1]">{name}</h2>
             <p className="text-[#cbd5e1] text-normal">{details}</p>
             <div className="text-sm py-2 font-thin">
-              <h3>Available Quantity: {available} Piece/Pieces</h3>
+              
               <h3>Min. Order: {quantity} Pieces</h3>
             </div>
             <h3 className="text-xl text-primary font-bold pb-6">
               {" "}
               Price:<span className="font-normal"> ${price}</span>
               <span className="text-sm font-thin text-[#cbd5e1]"> / Piece</span>
-            </h3>
+                 </h3>
+                 <HandleQuantity></HandleQuantity>
             <label
               htmlFor="purchase-modal"
               className="btn bg-gradient-to-tr from-primary to secondary hover:bg-transparent w-full max-w-xs text-white"
