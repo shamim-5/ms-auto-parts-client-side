@@ -12,36 +12,37 @@ const Navbar = () => {
     signOut(auth);
   };
 
+  console.log(user);
   const menuItems = (
     <>
       <li>
-        <Link className="pr-0 pl-3" to="/spare">
+        <Link className="pr-0 pl-3 hover:text-primary" to="/spare">
           Parts
         </Link>
       </li>
 
       <li>
-        <Link className="pr-0 pl-3" to="/review">
+        <Link className="pr-0 pl-3 hover:text-primary" to="/review">
           Review
         </Link>
       </li>
       <li>
-        <Link className="pr-0 pl-3" to="/premium">
+        <Link className="pr-0 pl-3 hover:text-primary" to="/premium">
           Premium Area
         </Link>
       </li>
       <li>
-        <Link className="pr-0 pl-3" to="/blogs">
+        <Link className="pr-0 pl-3 hover:text-primary" to="/blogs">
           Blogs
         </Link>
       </li>
       <li>
         {user ? (
-          <Link className="pr-0 pl-3" to="/signup">
-            Signed
+          <Link onClick={logout} className="pr-0 pl-5 hover:text-primary" to="/signup">
+            Log{"\u00a0"}Out
           </Link>
         ) : (
-          <Link className="pr-0 pl-3" to="/signup">
+          <Link className="pr-0 pl-5 hover:text-primary" to="/signup">
             Sign{"\u00a0"}Up
           </Link>
         )}
@@ -92,11 +93,11 @@ const Navbar = () => {
                 <div className="text-xl mx-3">
                   <li className="list-none">
                     {user ? (
-                      <Link to="login" onClick={logout} className="capitalize">
-                        Log{"\u00a0"}out
+                      <Link to="/" className="capitalize">
+                        {user.displayName}
                       </Link>
                     ) : (
-                      <Link to="login" className="capitalize">
+                      <Link to="login" className="capitalize hover:text-primary">
                         Log{"\u00a0"}in
                       </Link>
                     )}

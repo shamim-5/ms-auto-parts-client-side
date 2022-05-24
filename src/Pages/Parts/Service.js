@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const Service = ({ service }) => {
-  const { name, img, details, quantity, available, price } = service;
-  
+  const { _id, name, img, details, quantity, available, price } = service;
+  const navigate = useNavigate();
+
+  const purchase = (id) => {
+    navigate(`/purchase/${id}`);
+  };
+
   return (
     <div>
       <div className="card card-compact w-50  shadow-xl rounded-none">
@@ -23,7 +29,9 @@ const Service = ({ service }) => {
               Price:<span className="font-normal"> ${price}</span>
               <span className="text-sm font-thin text-[#cbd5e1]"> / Piece</span>
             </h3>
-            <button className="btn btn-primary bg-transparent border-white">Purchase</button>
+            <button onClick={() => purchase(_id)} className="btn btn-primary bg-transparent border-white">
+              Purchase
+            </button>
           </div>
         </div>
       </div>

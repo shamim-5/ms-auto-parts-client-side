@@ -8,6 +8,8 @@ import Premium from "./Pages/Home/Premium";
 import SpareParts from "./Pages/SpareParts/SpareParts";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/Login/SignUp";
+import Purchase from "./Pages/Orders/Purchase";
+import RequireAuth from "./Pages/Login/RequireAuth"
 
 function App() {
   const styles = {
@@ -38,6 +40,14 @@ function App() {
           <Route path="spare" element={<SpareParts />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<SignUp />} />
+          <Route
+            path="purchase/:id"
+            element={
+              <RequireAuth>
+                <Purchase />
+              </RequireAuth>
+            }
+          />
         </Routes>
         <Footer />
       </div>
