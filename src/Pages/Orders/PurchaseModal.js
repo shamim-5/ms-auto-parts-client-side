@@ -1,6 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const PurchaseModal = ({ user, name, setManageState, orderQuantity }) => {
   const { _id } = useParams();
@@ -29,11 +30,17 @@ const PurchaseModal = ({ user, name, setManageState, orderQuantity }) => {
       body: JSON.stringify(order),
     })
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => {
+        if (data.success) {
+          toast(`Order is added to cart`);
+        } else {
+          toast.error(`Order already added to cart`);
+        }
+      });
 
-    //close modal
     setManageState(null);
   };
+
   return (
     <div>
       <input type="checkbox" id="purchase-modal" className="modal-toggle" />

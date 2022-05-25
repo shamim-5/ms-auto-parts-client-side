@@ -11,6 +11,8 @@ import SignUp from "./Pages/Login/SignUp";
 import Purchase from "./Pages/Orders/Purchase";
 import RequireAuth from "./Pages/Login/RequireAuth"
 import Blogs from "./Pages/Shared/Blogs/Blogs";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const styles = {
@@ -52,6 +54,7 @@ function App() {
           />
         </Routes>
         <Footer />
+        <ToastContainer />
       </div>
     </div>
   );
