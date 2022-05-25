@@ -1,7 +1,9 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { useParams } from "react-router-dom";
 
-const PurchaseModal = ({ user, name }) => {
+const PurchaseModal = ({ user, name, setManageState }) => {
+  const { _id } = useParams();
   const {
     register,
     formState: { errors },
@@ -9,9 +11,10 @@ const PurchaseModal = ({ user, name }) => {
   } = useForm();
 
   const onSubmit = (data) => {
-    const address = data.address;
-    const phone = data.phone;
-    console.log(address, phone);
+    
+    
+    //close modal
+    setManageState(null);
   };
   return (
     <div>

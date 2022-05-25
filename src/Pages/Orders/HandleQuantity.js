@@ -32,7 +32,9 @@ const HandleQuantity = ({
 
   useEffect(() => {
     setOrderPrice(order * price);
-    if (order >= 10) {
+    if (order < 10) {
+      setManageState(true);
+    } else {
       setManageState(false);
     }
   }, [order]);

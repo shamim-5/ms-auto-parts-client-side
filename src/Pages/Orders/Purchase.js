@@ -15,7 +15,7 @@ const Purchase = () => {
   const [order, setOrder] = useState(0);
   const [restQuantity, setRestQuantity] = useState(100);
   const [orderPrice, setOrderPrice] = useState(null);
-  const [manageState, setManageState] = useState(true);
+  const [manageState, setManageState] = useState(null);
 
   useEffect(() => {
     fetch(`http://localhost:5000/service/${id}`)
@@ -53,7 +53,7 @@ const Purchase = () => {
             ></HandleQuantity>
 
             <div>
-              {manageState ? (
+              {manageState === true ? (
                 <button className="btn bg-gradient-to-tr from-primary to secondary hover:bg-transparent w-full max-w-xs text-white">
                   Quantity Too Low
                 </button>
@@ -69,7 +69,7 @@ const Purchase = () => {
           </div>
         </div>
       </div>
-      <PurchaseModal user={user} name={name}></PurchaseModal>
+      {manageState === false && <PurchaseModal setManageState={setManageState} user={user} name={name}></PurchaseModal>}
     </div>
   );
 };
