@@ -8,7 +8,7 @@ const Dashboard = () => {
         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
         <div className="drawer-content  text-center py-6 relative">
           <h2 className="text-3xl text-center font-serif">WelCome To Dashboard</h2>
-          <label htmlFor="my-drawer" className="btn btn-primary drawer-button absolute right-0 top-0 ">
+          <label htmlFor="my-drawer" className="btn btn-primary btn-sm rounded-none rounded-t-sm drawer-button absolute right-0 top-0 ">
             Open drawer
           </label>
           <Outlet></Outlet>
