@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 
-const PurchaseModal = ({ user, name, setManageState }) => {
+const PurchaseModal = ({ user, name, setManageState, orderQuantity }) => {
   const { _id } = useParams();
   const {
     register,
@@ -11,8 +11,26 @@ const PurchaseModal = ({ user, name, setManageState }) => {
   } = useForm();
 
   const onSubmit = (data) => {
-    
-    
+    const order = {
+      orderId: _id,
+      partsName: name,
+      quantity: orderQuantity,
+      name: user.displayName,
+      email: user.email,
+      address: data.address,
+      phone: data.phone,
+    };
+
+    fetch("http://localhost:5000/order", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(order),
+    })
+      .then((res) => res.json())
+      .then((data) => console.log(data));
+
     //close modal
     setManageState(null);
   };
