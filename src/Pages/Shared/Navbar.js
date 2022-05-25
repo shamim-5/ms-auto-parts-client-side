@@ -20,9 +20,11 @@ const Navbar = () => {
         </Link>
       </li>
       <li>
-        <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard">
-          Dashboard
-        </Link>
+        {user && (
+          <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard">
+            Dashboard
+          </Link>
+        )}
       </li>
       <li>
         <Link className="pr-0 pl-3 hover:text-primary" to="/spare">

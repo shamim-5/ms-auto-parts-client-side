@@ -1,26 +1,9 @@
-import { signOut } from "firebase/auth";
-import React, { useEffect, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-import { useNavigate } from "react-router-dom";
-import auth from "../../firebase.init";
+import React from "react";
+import useOrders from "../../hooks/useOrders";
 
 const MyOrders = () => {
-  const [orders, setOrders] = useState([]);
-  const [user] = useAuthState(auth);
-  const navigate = useNavigate();
-
-  useEffect(() => {
-    if (user) {
-      fetch(`http://localhost:5000/order?email=${user.email}`)
-        .then((res) => {
-          console.log("res", res);
-          return res.json();
-        })
-        .then((data) => {
-          setOrders(data);
-        });
-    }
-  }, [user]);
+  const [orders] = useOrders();
+ 
 
   return (
     <div className="py-4">
@@ -38,7 +21,7 @@ const MyOrders = () => {
           </thead>
           <tbody>
             {orders.map((order, index) => (
-              <tr>
+              <tr key={index}>
                 <th>{index + 1}</th>
                 <td>{order.name}</td>
                 <td>{order.email}</td>
