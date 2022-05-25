@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Home from "./Pages/Home/Home";
 import Navbar from "./Pages/Shared/Navbar";
+import Home from "./Pages/Home/Home";
 import Footer from "./Pages/Shared/Footer";
 import Reviews from "./Pages/Home/Reviews";
 import Premium from "./Pages/Home/Premium";
@@ -9,10 +9,12 @@ import SpareParts from "./Pages/SpareParts/SpareParts";
 import Login from "./Pages/Login/Login";
 import SignUp from "./Pages/Login/SignUp";
 import Purchase from "./Pages/Orders/Purchase";
-import RequireAuth from "./Pages/Login/RequireAuth"
+import RequireAuth from "./Pages/Login/RequireAuth";
 import Blogs from "./Pages/Shared/Blogs/Blogs";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import NotFound from "./Pages/NotFound/NotFound";
+import Dashboard from "./Pages/Dashboard/Dashboard";
 
 function App() {
   const styles = {
@@ -52,6 +54,8 @@ function App() {
               </RequireAuth>
             }
           />
+          <Route path="dashboard" element={<Dashboard />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
         <ToastContainer />

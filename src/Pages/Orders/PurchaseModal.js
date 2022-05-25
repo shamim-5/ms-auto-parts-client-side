@@ -32,9 +32,9 @@ const PurchaseModal = ({ user, name, setManageState, orderQuantity }) => {
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
-          toast(`Order is added to cart`);
+          toast(`Order Placed Success`);
         } else {
-          toast.error(`Order already added to cart`);
+          toast.error(`Order Already Placed`);
         }
       });
 

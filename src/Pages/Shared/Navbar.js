@@ -15,11 +15,20 @@ const Navbar = () => {
   const menuItems = (
     <>
       <li>
+        <Link className="pr-0 pl-3 hover:text-primary" to="/">
+          Home
+        </Link>
+      </li>
+      <li>
+        <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard">
+          Dashboard
+        </Link>
+      </li>
+      <li>
         <Link className="pr-0 pl-3 hover:text-primary" to="/spare">
           Parts
         </Link>
       </li>
-
       <li>
         <Link className="pr-0 pl-3 hover:text-primary" to="/review">
           Review
@@ -37,7 +46,7 @@ const Navbar = () => {
       </li>
       <li>
         {user ? (
-          <Link onClick={logout} className="pr-0 pl-5 hover:text-primary" to="/signup">
+          <Link onClick={logout} className="pr-0 pl-5 hover:text-primary" to="/login">
             Log{"\u00a0"}Out
           </Link>
         ) : (
