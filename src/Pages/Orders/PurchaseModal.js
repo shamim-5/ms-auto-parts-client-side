@@ -7,10 +7,11 @@ const PurchaseModal = ({ user, name }) => {
     formState: { errors },
     handleSubmit,
   } = useForm();
-  const onSubmit = (event) => {
-    event.preventDefault();
-    const quantity = event.target.quantity.value;
-    console.log(name, quantity);
+
+  const onSubmit = (data) => {
+    const address = data.address;
+    const phone = data.phone;
+    console.log(address, phone);
   };
   return (
     <div>
@@ -41,23 +42,33 @@ const PurchaseModal = ({ user, name }) => {
               name="phone"
               placeholder="Phone Number"
               className="input input-bordered w-full max-w-xs bg-transparent border-white"
-            />
-            <input
-              type="number"
-              name="quantity"
-              placeholder="Quantity Ex* 1, 2, 3*"
-              className="input input-bordered w-full max-w-xs bg-transparent border-white"
-              {...register("quantity", {
+              {...register("phone", {
                 required: {
                   value: true,
-                  message: "Please provide valid quantity",
+                  message: "Please provide your phone number",
                 },
-                min: 10,
               })}
             />
             <label className="label">
-              {errors.quantity?.type === "required" && (
-                <span className="label-text-alt text-primary">{errors.quantity.message}</span>
+              {errors.phone?.type === "required" && (
+                <span className="label-text-alt text-primary">{errors.phone.message}</span>
+              )}
+            </label>
+            <input
+              type="text"
+              name="address"
+              placeholder="Address"
+              className="input input-bordered w-full max-w-xs bg-transparent border-white"
+              {...register("address", {
+                required: {
+                  value: true,
+                  message: "Please provide your address",
+                },
+              })}
+            />
+            <label className="label">
+              {errors.address?.type === "required" && (
+                <span className="label-text-alt text-primary">{errors.address.message}</span>
               )}
             </label>
             <input type="submit" value="Submit" className="btn btn-primary hover:bg-transparent w-full max-w-xs" />
