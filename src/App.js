@@ -15,6 +15,10 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NotFound from "./Pages/NotFound/NotFound";
 import Dashboard from "./Pages/Dashboard/Dashboard";
+import Review from "./Pages/Home/Review";
+import MyOrders from "./Pages/Dashboard/MyOrders";
+import MyProfile from "./Pages/Dashboard/MyProfile";
+import AllUsers from "./Pages/Dashboard/AllUsers";
 
 function App() {
   const styles = {
@@ -54,7 +58,18 @@ function App() {
               </RequireAuth>
             }
           />
-          <Route path="dashboard" element={<Dashboard />} />
+          <Route
+            path="dashboard"
+            element={
+              <RequireAuth>
+                <Dashboard />
+              </RequireAuth>
+            }
+          >
+            <Route index element={<MyOrders />}></Route>
+            <Route path="profile" element={<MyProfile />}></Route>
+            <Route path="users" element={<AllUsers />}></Route>
+          </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
