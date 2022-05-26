@@ -18,7 +18,7 @@ const Dashboard = () => {
             htmlFor="my-drawer"
             className="btn btn-primary btn-sm rounded-none rounded-t-sm drawer-button absolute right-0 top-0 "
           >
-            Open drawer
+            Dashboard Menu
           </label>
           <Outlet></Outlet>
         </div>

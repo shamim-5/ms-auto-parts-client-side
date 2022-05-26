@@ -1,7 +1,7 @@
 import { signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useLocation, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 import auth from "../firebase.init";
 
 const useOrders = () => {
@@ -18,7 +18,6 @@ const useOrders = () => {
         },
       })
         .then((res) => {
-          console.log("res", res);
           if (res.status === 401 || res.status === 403) {
             signOut(auth);
             localStorage.removeItem("accessToken");

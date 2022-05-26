@@ -1,10 +1,24 @@
 import React from "react";
 import useOrders from "../../hooks/useOrders";
+import MyOrderRow from "./MyOrderRow";
 
 const MyOrders = () => {
-  const [orders] = useOrders();
-  
- 
+  const [orders, setOrders] = useOrders();
+
+  const cancelOrder = (id) => {
+    console.log(id);
+
+    const url = `http://localhost:5000/order/${id}`;
+    fetch(url, {
+      method: "DELETE",
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data);
+        const remainging = orders.filter((order) => order._id !== id);
+        setOrders(remainging);
+      });
+  };
 
   return (
     <div className="py-4">
@@ -18,6 +32,8 @@ const MyOrders = () => {
               <th>Email</th>
               <th>Parts Name</th>
               <th>Quantity</th>
+              <th>Payment</th>
+              <th>Cancel</th>
             </tr>
           </thead>
           <tbody>
@@ -28,11 +44,29 @@ const MyOrders = () => {
                 <td>{order.email}</td>
                 <td>{order.partsName}</td>
                 <td>{order.quantity}</td>
+                <td>
+                  <label
+                    htmlFor="my-modal"
+                    className=" btn btn-primary btn-sm bg-transparent text-primary hover:text-white"
+                  >
+                    Pay
+                  </label>
+                </td>
+                <td>
+                  <label
+                    htmlFor="my-modal"
+                    onClick={() => cancelOrder(order._id)}
+                    className=" btn btn-primary btn-sm hover:text-primary hover:bg-transparent"
+                  >
+                    Cancel
+                  </label>
+                </td>
               </tr>
             ))}
           </tbody>
         </table>
       </div>
+      <MyOrderRow orders={orders} setOrders={setOrders}></MyOrderRow>
     </div>
   );
 };
