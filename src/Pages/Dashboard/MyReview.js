@@ -4,10 +4,13 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import auth from "../../firebase.init";
 import useOrders from "../../hooks/useOrders";
+import useUserReview from "../../hooks/useUserReview";
+import Order from "./Order";
 
 const MyReview = () => {
   const [user] = useAuthState(auth);
-  const [orders, setOrders] = useOrders();
+  const [myReview] = useUserReview();
+
   const {
     register,
     formState: { errors },
@@ -18,7 +21,7 @@ const MyReview = () => {
     const review = {
       user: user.displayName,
       email: user.email,
-      comment: data.comments,
+      details: data.comments,
       react: data.ratings,
     };
 
@@ -44,9 +47,9 @@ const MyReview = () => {
     <div className="container py-3 grid md:grid-cols-2 grid-cols-1">
       <div className="text-left">
         <h2 className="text-2xl m-2 text-[#0e7490] text-center">My Review</h2>
-        {/* {myReview.map((review) => (
-          <Order key={review._id} order={review}></Order>
-       ))} */}
+        {myReview.map((review) => (
+          <Order key={review._id} review={review}></Order>
+        ))}
       </div>
       <div>
         <div className="modal-box relative bg-transparent border border-secondary bg-gradient-to-tr from-[#3D161A] to-black">
