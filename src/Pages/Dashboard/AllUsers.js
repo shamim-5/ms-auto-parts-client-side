@@ -1,46 +1,41 @@
-import React, { useEffect, useState } from "react";
-import { useAuthState } from "react-firebase-hooks/auth";
-import auth from "../../firebase.init";
+import React from "react";
+import { useQuery } from "react-query";
+import Loading from "../Shared/Loading";
+import UserRow from "./UserRow";
 
 const AllUsers = () => {
-  const [orders, setOrders] = useState([]);
-  const [user] = useAuthState(auth);
+  const {
+    data: users,
+    isLoading,
+    refetch,
+  } = useQuery("users", () =>
+    fetch("http://localhost:5000/user", {
+      method: "GET",
+      headers: {
+        authorization: `Bearer ${localStorage.getItem("accessToken")}`,
+      },
+    }).then((res) => res.json())
+  );
+  if (isLoading) {
+    return <Loading></Loading>;
+  }
 
-  useEffect(() => {
-    if (user) {
-      fetch(`http://localhost:5000/orders`)
-        .then((res) => {
-          console.log("res", res);
-          return res.json();
-        })
-        .then((data) => {
-          setOrders(data);
-        });
-    }
-  }, [user]);
   return (
     <div className="py-4">
-      <h2 className="text-2xl pb-2">All Users: {orders.length}</h2>
+      <h2 className="text-2xl pb-2">All Users: {users.length}</h2>
       <div className="overflow-x-auto ">
         <table className="table w-full text-primary">
-          <thead className="">
+          <thead>
             <tr>
               <th></th>
-              <th>Name</th>
-              <th>Email</th>
-              <th>Parts Name</th>
-              <th>Quantity</th>
+              <th>User</th>
+              <th>Job</th>
+              <th>Delete</th>
             </tr>
           </thead>
           <tbody>
-            {orders.map((order, index) => (
-              <tr key={index}>
-                <th>{index + 1}</th>
-                <td>{order.name}</td>
-                <td>{order.email}</td>
-                <td>{order.partsName}</td>
-                <td>{order.quantity}</td>
-              </tr>
+            {users.map((user) => (
+              <UserRow key={user._id} user={user} refetch={refetch}></UserRow>
             ))}
           </tbody>
         </table>

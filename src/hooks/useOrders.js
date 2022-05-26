@@ -1,13 +1,13 @@
 import { signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import auth from "../firebase.init";
 
 const useOrders = () => {
   const [orders, setOrders] = useState([]);
   const [user] = useAuthState(auth);
-  const navigate = useLocation();
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (user) {
