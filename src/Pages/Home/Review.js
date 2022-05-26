@@ -7,7 +7,7 @@ const Review = ({ review }) => {
 
   return (
     <div>
-      <div style={{ height: "460px" }} className="card card-compact shadow-xl rounded-none border border-[#6d6d6d]">
+      <div className="card card-compact shadow-xl rounded-none border border-[#6d6d6d]">
         <figure>
           <img src={img} alt="Shoes" />
         </figure>
