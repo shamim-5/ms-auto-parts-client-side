@@ -20,6 +20,7 @@ import MyOrders from "./Pages/Dashboard/MyOrders";
 import MyProfile from "./Pages/Dashboard/MyProfile";
 import AllUsers from "./Pages/Dashboard/AllUsers";
 import RequireAdmin from "./Pages/Login/RequireAdmin";
+import MyReview from "./Pages/Dashboard/MyReview";
 
 function App() {
   const styles = {
@@ -69,6 +70,7 @@ function App() {
           >
             <Route index element={<MyOrders />}></Route>
             <Route path="profile" element={<MyProfile />}></Route>
+            <Route path="review" element={<MyReview />}></Route>
             <Route
               path="users"
               element={

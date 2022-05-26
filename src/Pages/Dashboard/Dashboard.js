@@ -35,6 +35,11 @@ const Dashboard = () => {
                 My Profile
               </Link>
             </li>
+            <li>
+              <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/review">
+                My Review
+              </Link>
+            </li>
             {admin && (
               <li>
                 <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/users">
