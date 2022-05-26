@@ -26,26 +26,53 @@ const Dashboard = () => {
           <label htmlFor="my-drawer" className="drawer-overlay"></label>
           <ul className="menu p-4 overflow-y-auto w-48 bg-gradient-to-r from-transparent to-secondary">
             <li>
-              <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard">
-                My Orders
-              </Link>
-            </li>
-            <li>
               <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/profile">
                 My Profile
               </Link>
             </li>
-            <li>
-              <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/review">
-                My Review
-              </Link>
-            </li>
-            {admin && (
-              <li>
-                <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/users">
-                  All Users
-                </Link>
-              </li>
+
+            {admin ? (
+              <>
+                <li>
+                  <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/users">
+                    All Users
+                  </Link>
+                </li>
+                <li>
+                  <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/add">
+                    Add Product
+                  </Link>
+                </li>
+                <li>
+                  <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/product">
+                    All Product
+                  </Link>
+                </li>
+                <li>
+                  <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/manageProduct">
+                    Manage Product
+                  </Link>
+                </li>
+                <li>
+                  <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/manageOrder">
+                    Manage Order
+                  </Link>
+                </li>
+              </>
+            ) : (
+              <>
+                {" "}
+                <li>
+                  <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard">
+                    My Orders
+                  </Link>
+                </li>
+                <li>
+                  <Link className="pr-0 pl-3 hover:text-primary" to="/dashboard/review">
+                    My Review
+                  </Link>
+                </li>{" "}
+              </>
             )}
           </ul>
         </div>

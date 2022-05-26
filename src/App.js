@@ -15,12 +15,15 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import NotFound from "./Pages/NotFound/NotFound";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-import Review from "./Pages/Home/Review";
 import MyOrders from "./Pages/Dashboard/MyOrders";
 import MyProfile from "./Pages/Dashboard/MyProfile";
 import AllUsers from "./Pages/Dashboard/AllUsers";
 import RequireAdmin from "./Pages/Login/RequireAdmin";
 import MyReview from "./Pages/Dashboard/MyReview";
+import AddProduct from "./Pages/Dashboard/AddProduct";
+import AllProduct from "./Pages/Dashboard/AllProduct";
+import ManageOrder from "./Pages/Dashboard/ManageOrder";
+import ManageProduct from "./Pages/Dashboard/ManageProduct";
 
 function App() {
   const styles = {
@@ -76,6 +79,38 @@ function App() {
               element={
                 <RequireAdmin>
                   <AllUsers />
+                </RequireAdmin>
+              }
+            ></Route>
+            <Route
+              path="add"
+              element={
+                <RequireAdmin>
+                  <AddProduct />
+                </RequireAdmin>
+              }
+            ></Route>
+            <Route
+              path="product"
+              element={
+                <RequireAdmin>
+                  <AllProduct />
+                </RequireAdmin>
+              }
+            ></Route>
+            <Route
+              path="manageProduct"
+              element={
+                <RequireAdmin>
+                  <ManageProduct />
+                </RequireAdmin>
+              }
+            ></Route>
+            <Route
+              path="manageOrder"
+              element={
+                <RequireAdmin>
+                  <ManageOrder />
                 </RequireAdmin>
               }
             ></Route>
