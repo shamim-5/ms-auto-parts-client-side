@@ -11,7 +11,7 @@ const useUserReview = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/review?email=${user.email}`, {
+      fetch(`https://afternoon-woodland-49409.herokuapp.com/review?email=${user.email}`, {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,

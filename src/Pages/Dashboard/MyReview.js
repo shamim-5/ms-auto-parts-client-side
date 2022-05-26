@@ -25,7 +25,7 @@ const MyReview = () => {
       react: data.ratings,
     };
 
-    fetch("http://localhost:5000/review", {
+    fetch("https://afternoon-woodland-49409.herokuapp.com/review", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -18,7 +18,7 @@ const Purchase = () => {
   const [manageState, setManageState] = useState(null);
 
   useEffect(() => {
-    fetch(`http://localhost:5000/service/${id}`)
+    fetch(`https://afternoon-woodland-49409.herokuapp.com/service/${id}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);

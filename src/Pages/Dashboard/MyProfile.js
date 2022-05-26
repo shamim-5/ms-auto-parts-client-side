@@ -27,7 +27,7 @@ const MyProfile = () => {
       phone: data.phone,
     };
 
-    fetch("http://localhost:5000/order", {
+    fetch("https://afternoon-woodland-49409.herokuapp.com/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

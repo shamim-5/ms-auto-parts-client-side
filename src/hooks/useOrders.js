@@ -1,7 +1,7 @@
 import { signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import {  useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import auth from "../firebase.init";
 
 const useOrders = () => {
@@ -11,7 +11,7 @@ const useOrders = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`http://localhost:5000/order?email=${user.email}`, {
+      fetch(`https://afternoon-woodland-49409.herokuapp.com/order?email=${user.email}`, {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,

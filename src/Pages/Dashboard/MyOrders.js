@@ -8,7 +8,7 @@ const MyOrders = () => {
   const cancelOrder = (id) => {
     console.log(id);
 
-    const url = `http://localhost:5000/order/${id}`;
+    const url = `https://afternoon-woodland-49409.herokuapp.com/order/${id}`;
     fetch(url, {
       method: "DELETE",
     })
