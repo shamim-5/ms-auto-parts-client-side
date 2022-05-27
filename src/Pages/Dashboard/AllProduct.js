@@ -1,9 +1,10 @@
 import React from "react";
+import SpareParts from "../SpareParts/SpareParts"
 
 const AllProduct = () => {
   return (
     <div>
-      <h2>All Product page</h2>
+      <SpareParts></SpareParts>
     </div>
   );
 };

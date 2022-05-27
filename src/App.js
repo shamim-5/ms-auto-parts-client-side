@@ -24,6 +24,7 @@ import AddProduct from "./Pages/Dashboard/AddProduct";
 import AllProduct from "./Pages/Dashboard/AllProduct";
 import ManageOrder from "./Pages/Dashboard/ManageOrder";
 import ManageProduct from "./Pages/Dashboard/ManageProduct";
+import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
 
 function App() {
   const styles = {
@@ -51,6 +52,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="review" element={<Reviews />} />
           <Route path="blogs" element={<Blogs />} />
+          <Route path="portfolio" element={<MyPortfolio />} />
           <Route path="premium" element={<Premium />} />
           <Route path="spare" element={<SpareParts />} />
           <Route path="login" element={<Login />} />

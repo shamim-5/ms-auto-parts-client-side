@@ -86,23 +86,18 @@ const MyReview = () => {
                 <span className="label-text-alt text-primary">{errors.comments.message}</span>
               )}
             </label>
-            <input
-              type="number"
-              name="ratings"
-              placeholder="Ratings"
-              className="input input-bordered w-full max-w-xs bg-transparent border-white"
-              {...register("ratings", {
-                required: {
-                  value: true,
-                  message: "Ratings is required",
-                },
-              })}
-            />
-            <label className="label">
-              {errors.ratings?.type === "required" && (
-                <span className="label-text-alt text-primary">{errors.ratings.message}</span>
-              )}
-            </label>
+            <div class="form-control w-full max-w-xs text-primary ">
+              <label class="label">
+                <span class="label-text text-primary">Ratings</span>
+              </label>
+              <select {...register("ratings")} class="select  select-bordered bg-transparent">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
 
             <input type="submit" value="Add Ratings" className="btn btn-primary hover:bg-transparent w-full max-w-xs" />
           </form>

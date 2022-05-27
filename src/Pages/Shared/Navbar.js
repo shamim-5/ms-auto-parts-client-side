@@ -36,14 +36,15 @@ const Navbar = () => {
           Review
         </Link>
       </li>
-      <li>
-        <Link className="pr-0 pl-3 hover:text-primary" to="/premium">
-          Premium Area
-        </Link>
-      </li>
+     
       <li>
         <Link className="pr-0 pl-3 hover:text-primary" to="/blogs">
           Blogs
+        </Link>
+      </li>
+      <li>
+        <Link className="pr-0 pl-3 hover:text-primary" to="/portfolio">
+          My Portfolio
         </Link>
       </li>
       <li>
