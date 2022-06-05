@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 import { toast } from "react-toastify";
 
-const PurchaseModal = ({ user, name, setManageState, orderQuantity }) => {
+const PurchaseModal = ({ user, name, setManageState, orderQuantity, orderPrice }) => {
   const { _id } = useParams();
   const {
     register,
@@ -16,6 +16,7 @@ const PurchaseModal = ({ user, name, setManageState, orderQuantity }) => {
       orderId: _id,
       partsName: name,
       quantity: orderQuantity,
+      orderPrice: orderPrice,
       name: user.displayName,
       email: user.email,
       address: data.address,

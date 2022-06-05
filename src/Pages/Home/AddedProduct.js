@@ -3,10 +3,8 @@ import { toast } from "react-toastify";
 
 const AddedProduct = ({ products, setProducts, product, children }) => {
   const { _id, name, img, details, quantity, available, price } = product;
-  console.log(product);
 
   const deleteProduct = (id) => {
-    console.log(id);
 
     const url = `https://afternoon-woodland-49409.herokuapp.com/product/${id}`;
     fetch(url, {

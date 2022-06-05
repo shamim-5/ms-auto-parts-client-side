@@ -1,6 +1,5 @@
 [
   {
-    "_id": 1,
     "name": "Cylinder Head Gasket",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_2_yv5k8u.webp ",
     "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
@@ -9,7 +8,6 @@
     "price": "120"
   },
   {
-    "_id": 2,
     "name": "Car Engine Clutch",
     "img": " https://res.cloudinary.com/dskmjlma4/image/upload/v1653235500/manufacturer-website-assignment/assets/shops-part/shop-part_13_cu4f5f.webp",
     "details": "Fitment：Fit For 168,152 use the same gasoline engine. Package Included：1x Centrifugal Automatic Clutch Chain. Origin: CN(Origin). Model Name: 350 Chain 160 LinksMaterial. Type: high quality metal",
@@ -18,7 +16,6 @@
     "price": "90"
   },
   {
-    "_id": 3,
     "name": "Aluminium Piston",
     "img": " https://res.cloudinary.com/dskmjlma4/image/upload/v1653235499/manufacturer-website-assignment/assets/shops-part/shop-part_12_kx9dy8.webp",
     "details": "KELKONG Cylinder Piston Fit For 168F Engine GX160 GX200 5.5HP 6.5HP Carburetor Chainsaw 68mm Piston For Dirt Bike Motorcycle. Size:6.8cm(2.67in)*5cm(1.96in) Package: 1 *cylinder piston. Color:Sliver. Weight:140g",
@@ -27,190 +24,169 @@
     "price": "45"
   },
   {
-    "_id": 4,
     "name": "Cylinder Head",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_23_kxalpe.webp ",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "130"
   },
   {
-    "_id": 5,
     "name": "Timing Belt",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235502/manufacturer-website-assignment/assets/shops-part/shop-part_6_wwuibr.webp ",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "40"
   },
   {
-    "_id": 6,
     "name": "Turbocharger",
     "img": " https://res.cloudinary.com/dskmjlma4/image/upload/v1653235500/manufacturer-website-assignment/assets/shops-part/shop-part_14_lefvoy.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "76"
   },
   {
-    "_id": 7,
     "name": "Steering Rack",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_3_j4eybw.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "126"
   },
   {
-    "_id": 8,
     "name": "Brake Hoses",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235500/manufacturer-website-assignment/assets/shops-part/shop-part_19_bvrork.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "108"
   },
   {
-    "_id": 9,
     "name": "Brake Cylinder",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235500/manufacturer-website-assignment/assets/shops-part/shop-part_18_olam2s.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "125"
   },
   {
-    "_id": 10,
     "name": "Brake Disc",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235500/manufacturer-website-assignment/assets/shops-part/shop-part_16_tvgrob.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "112"
   },
   {
-    "_id": 11,
     "name": "Power Steering Pump",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_21_u0gakq.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "109"
   },
   {
-    "_id": 12,
     "name": "Brake Pads",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235499/manufacturer-website-assignment/assets/shops-part/shop-part_10_ptmusb.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "120"
   },
   {
-    "_id": 13,
     "name": "Lamps",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_20_wmqmet.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "8.99"
   },
   {
-    "_id": 14,
     "name": "Door Handle",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_22_xsoo0y.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "120"
   },
   {
-    "_id": 15,
     "name": "GPS",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235502/manufacturer-website-assignment/assets/shops-part/shop-part_7_hyzlmz.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "110"
   },
   {
-    "_id": 16,
     "name": "Car Mats",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235499/manufacturer-website-assignment/assets/shops-part/shop-part_1_vpscvq.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "108"
   },
   {
-    "_id": 17,
     "name": "Steering Wheel Cover",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_4_hyawa2.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "120"
   },
   {
-    "_id": 18,
     "name": "Seat Cover",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_24_lgi6hb.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "112"
   },
   {
-    "_id": 19,
     "name": "Chrome",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235502/manufacturer-website-assignment/assets/shops-part/shop-part_9_zcs5ys.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "12"
   },
   {
-    "_id": 20,
     "name": "Alloy",
     "img": " https://res.cloudinary.com/dskmjlma4/image/upload/v1653235499/manufacturer-website-assignment/assets/shops-part/shop-part_11_f4y0ha.webp ",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "8"
   },
   {
-    "_id": 21,
     "name": "4x4",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235500/manufacturer-website-assignment/assets/shops-part/shop-part_15_isr1uv.webp ",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "15"
   },
   {
-    "_id": 22,
     "name": "Aluminium",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235501/manufacturer-website-assignment/assets/shops-part/shop-part_5_ouijll.webp ",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "22"
   },
   {
-    "_id": 23,
     "name": "Steel",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235500/manufacturer-website-assignment/assets/shops-part/shop-part_17_nn5lnf.webp ",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "36"
   },
   {
-    "_id": 24,
     "name": "Custom",
     "img": "https://res.cloudinary.com/dskmjlma4/image/upload/v1653235502/manufacturer-website-assignment/assets/shops-part/shop-part_8_fdye0n.webp",
-    "details": "",
+    "details": "Brand Name: XUZHIANG, Origin: CN(Origin),  Model Number: W273 engine, OEM NO.: 22730161420, Material: metal + otherItem, Weight: 1.5kg, Country/Region of Manufacture: China, Placement on Vehicle: Engine.",
     "quantity": "10",
     "available": "100",
     "price": "80"

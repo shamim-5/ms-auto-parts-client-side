@@ -70,7 +70,13 @@ const Purchase = () => {
         </div>
       </div>
       {manageState === false && (
-        <PurchaseModal setManageState={setManageState} user={user} name={name} orderQuantity={order}></PurchaseModal>
+        <PurchaseModal
+          setManageState={setManageState}
+          user={user}
+          name={name}
+          orderQuantity={order}
+          orderPrice={orderPrice}
+        ></PurchaseModal>
       )}
     </div>
   );

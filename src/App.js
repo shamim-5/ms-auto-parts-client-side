@@ -25,6 +25,7 @@ import AllProduct from "./Pages/Dashboard/AllProduct";
 import ManageOrder from "./Pages/Dashboard/ManageOrder";
 import ManageProduct from "./Pages/Dashboard/ManageProduct";
 import MyPortfolio from "./Pages/MyPortfolio/MyPortfolio";
+import Payment from "./Pages/Dashboard/Payment";
 
 function App() {
   const styles = {
@@ -73,6 +74,7 @@ function App() {
               </RequireAuth>
             }
           >
+            <Route path="payment/:id" element={<Payment />}></Route>
             <Route index element={<MyOrders />}></Route>
             <Route path="profile" element={<MyProfile />}></Route>
             <Route path="review" element={<MyReview />}></Route>

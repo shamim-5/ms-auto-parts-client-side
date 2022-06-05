@@ -8,7 +8,6 @@ const AddProduct = () => {
   const onSubmit = (data) => {
     // console.log(data);
     const url = `https://afternoon-woodland-49409.herokuapp.com/product`;
-    console.log(url);
     fetch(url, {
       method: "POST",
       headers: {
