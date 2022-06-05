@@ -14,7 +14,11 @@ const Payment = () => {
   const { id } = useParams();
   const [price, setPrice] = useState(100);
 
+<<<<<<< HEAD
   const url = `http://localhost:5000/order/${id}`;
+=======
+  const url = ` https://afternoon-woodland-49409.herokuapp.com/order/${id}`;
+>>>>>>> 2ddb1dc (some bug fixed)
 
   const { data: order, isLoading } = useQuery(["order", id], () =>
     fetch(url, {

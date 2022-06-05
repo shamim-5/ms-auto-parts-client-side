@@ -1,5 +1,4 @@
 import React from "react";
-import MyOrders from "./MyOrders";
 import Loading from "../Shared/Loading";
 import { useQuery } from "react-query";
 import OrderRow from "./OrderRow";
@@ -10,12 +9,13 @@ const ManageOrder = () => {
     isLoading,
     refetch,
   } = useQuery("orders", () =>
-    fetch(`https://afternoon-woodland-49409.herokuapp.com/order/all`).then((res) => res.json())
+    fetch(` https://afternoon-woodland-49409.herokuapp.com/orders`).then((res) => res.json())
   );
 
   if (isLoading) {
     return <Loading></Loading>;
   }
+
   return (
     <div>
       <h2 className="text-3xl py-6 text-primary">Manage All Orders: {orders.length}</h2>
