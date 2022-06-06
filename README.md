@@ -1,6 +1,6 @@
 # WEBSITE NAME: MS AUTO PARTS
 
-## [Private repo link](https://github.com/programming-hero-web-course1/manufacturer-website-client-side-mss38)
+## [Public repo link](https://github.com/shamim-5/ms-auto-parts-client-side)
 # Live Website: [https://manufacturer-website-c427c.web.app/](https://manufacturer-website-c427c.web.app/)
 
 --------------

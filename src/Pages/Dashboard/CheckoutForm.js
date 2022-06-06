@@ -14,11 +14,7 @@ const CheckoutForm = ({ order }) => {
   const { _id, orderPrice, name, email } = order;
 
   useEffect(() => {
-<<<<<<< HEAD
-    fetch("http://localhost:5000/create-payment-intent", {
-=======
     fetch(" https://afternoon-woodland-49409.herokuapp.com/create-payment-intent", {
->>>>>>> 2ddb1dc (some bug fixed)
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -73,11 +69,7 @@ const CheckoutForm = ({ order }) => {
         order: _id,
         transactionId: paymentIntent.id,
       };
-<<<<<<< HEAD
-      fetch(`http://localhost:5000/order/${_id}`, {
-=======
       fetch(` https://afternoon-woodland-49409.herokuapp.com/order/${_id}`, {
->>>>>>> 2ddb1dc (some bug fixed)
         method: "PATCH",
         headers: {
           "content-type": "application/json",
@@ -111,11 +103,7 @@ const CheckoutForm = ({ order }) => {
             },
           }}
         />
-<<<<<<< HEAD
-        <button type="submit" className="btn btn-success btn-xs" disabled={!stripe || !clientSecret || success}>
-=======
-        <button type="submit" className="btn btn-success btn-xs" disabled={!stripe || !clientSecret}>
->>>>>>> 2ddb1dc (some bug fixed)
+        <button type="submit" className="btn btn-success btn-sm mt-16" disabled={!stripe || !clientSecret}>
           Pay
         </button>
       </form>

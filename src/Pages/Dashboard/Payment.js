@@ -12,13 +12,8 @@ const stripePromise = loadStripe(
 
 const Payment = () => {
   const { id } = useParams();
-  const [price, setPrice] = useState(100);
 
-<<<<<<< HEAD
-  const url = `http://localhost:5000/order/${id}`;
-=======
   const url = ` https://afternoon-woodland-49409.herokuapp.com/order/${id}`;
->>>>>>> 2ddb1dc (some bug fixed)
 
   const { data: order, isLoading } = useQuery(["order", id], () =>
     fetch(url, {
@@ -35,15 +30,15 @@ const Payment = () => {
 
   // console.log(order);
   return (
-    <div className="text-primary container">
-      <div className="card bg-base-100 max-w-md shadow-xl my-12">
+    <div className="text-primary container text-center grid md:grid-cols-2 grid-cols-1 gap-6 py-12">
+      <div className="card bg-base-100 h-48 shadow-xl">
         <div className="card-body">
           <p className="font-bold">Hello, {order.name}</p>
-          <h2 className="card-title">Please Pay for {order.partsName}</h2>
+          <h2 className="card-title mx-auto">Please Pay for {order.partsName}</h2>
           <p>Please pay: ${order.orderPrice}</p>
         </div>
       </div>
-      <div className="card flex-shrink-0 w-50 max-w-md shadow-2xl bg-base-100">
+      <div className="card h-48 shadow-xl bg-base-100">
         <div className="card-body">
           <Elements stripe={stripePromise}>
             <CheckoutForm order={order} />
