@@ -9,7 +9,7 @@
 <li> This website based on spare parts manufacturer</li>
 <li>Email/Password and Google authentication implemented</li>
 <li>Authenticate with JWT token verification</li>
-<li>Dashboard and Payment system implemented etc</li>
+<li>Dashboard and Payment system implemented</li>
 <li> User can delete his/her order if want</li>
 <li> Parts page show all collection of spare parts</li>
 <li> Use "react router hook" for implement login / registration system</li>
