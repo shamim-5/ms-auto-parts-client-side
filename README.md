@@ -6,12 +6,14 @@
 --------------
 ### Short description about this project:
 <ul>
-<li> This website covered manufacturer website</li>
-<li> User can delete his/her order if want </li>
+<li> This website based on spare parts manufacturer</li>
+<li>Email/Password and Google authentication implemented</li>
+<li>Authenticate with JWT token verification</li>
+<li>Dashboard and Payment system implemented etc</li>
+<li> User can delete his/her order if want</li>
 <li> Parts page show all collection of spare parts</li>
 <li> Use "react router hook" for implement login / registration system</li>
 <li> Dashboard will have user access. all usrer access given only admin.</li>
-<li> This site build based on manufacturer tool/parts</li>
 </ul>
 
 # Technology Library and Framework : [React, Tailwind, Daisy ui, Firebase, Nodejs, Mongodb, React hooks form, React query, React firebase hooks.]

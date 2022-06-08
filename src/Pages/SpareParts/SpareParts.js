@@ -20,7 +20,7 @@ const SpareParts = () => {
           ))}
         </div>
       </div>
-      <AddedProducts></AddedProducts>
+      <AddedProducts>Add To Cart</AddedProducts>
     </div>
   );
 };

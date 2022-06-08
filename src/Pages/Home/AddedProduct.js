@@ -25,7 +25,6 @@ const AddedProduct = ({ products, setProducts, product, children }) => {
           <img src={img} alt="parts" />
         </figure>
         <div className="card-body text-[#cbd5e1]">
-          {/* <h2 className="card-title text-sm text-[#cbd5e1] leading-none">{name}</h2> */}
           <h3 className="text-sm font-normal mb-2 leading-none">
             Price:<span className="font-thin"> ${price}</span>
           </h3>
