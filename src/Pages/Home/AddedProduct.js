@@ -1,11 +1,9 @@
 import React from "react";
-import { toast } from "react-toastify";
 
 const AddedProduct = ({ products, setProducts, product, children }) => {
   const { _id, name, img, details, quantity, available, price } = product;
 
   const deleteProduct = (id) => {
-
     const url = `https://afternoon-woodland-49409.herokuapp.com/product/${id}`;
     fetch(url, {
       method: "DELETE",
@@ -14,7 +12,6 @@ const AddedProduct = ({ products, setProducts, product, children }) => {
       .then((data) => {
         const remainging = product.filter((product) => product._id !== id);
         setProducts(remainging);
-        toast(`Order Placed Success`);
       });
   };
 
