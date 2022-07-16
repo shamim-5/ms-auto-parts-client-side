@@ -10,7 +10,14 @@ const Banner = () => {
           <h2 className="md:text-7xl text-5xl pb-3">Build Your Dream Car Today.</h2>
           <h2 className="md:text-7xl text-5xl"> Now 15% Off On All Items.</h2>
         </div>
-        <PrimaryButton>Shop Now</PrimaryButton>
+        <div
+          onClick={() => {
+            const anchor = document.querySelector("#shop-now");
+            anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+          }}
+        >
+          <PrimaryButton>Shop Now</PrimaryButton>
+        </div>
         <div className="flex flex-row justify-center md:text-2xl text-sm py-12">
           <div className="px-6">
             <p>Free Shipping</p>

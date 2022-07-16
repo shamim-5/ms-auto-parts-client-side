@@ -3,7 +3,7 @@ import logo from "../../assets/icon/logo_2.png";
 
 const Footer = () => {
   return (
-    <div className="container py-12 ">
+    <div id="reviews-link" className="container py-12 ">
       <div className="md:py-16 py-6">
         <div className="text-sm text-white md:text-xl  grid md:grid-cols-5 grid-cols-1 uppercase">
           <div>

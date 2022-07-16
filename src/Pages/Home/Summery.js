@@ -54,11 +54,23 @@ const Summery = () => {
             <h2 className="text-center text-[#0d4c69]">Don't hasitate to contact us</h2>
           </div>
           <div className="flex md:flex-row flex-col">
-            <div className="mr-6 py-3">
+            <div
+              className="mr-6 py-3 "
+              onClick={() => {
+                const anchor = document.querySelector("#reviews-link");
+                anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+              }}
+            >
               {" "}
               <TransparentButton>{"Request For Quote"}</TransparentButton>
             </div>
-            <div className="py-3">
+            <div
+              className="py-3"
+              onClick={() => {
+                const anchor = document.querySelector("#reviews-link");
+                anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+              }}
+            >
               <PrimaryButton>Contact Us</PrimaryButton>
             </div>
           </div>

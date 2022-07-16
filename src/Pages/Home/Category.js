@@ -9,7 +9,13 @@ const Category = () => {
           <div className="flex-1">
             <h2 className="text-4xl">Shop by Category</h2>
           </div>
-          <div className="flex-none">
+          <div
+            className="flex-none"
+            onClick={() => {
+              const anchor = document.querySelector("#shop-now");
+              anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+            }}
+          >
             <TransparentButton>{"Shop"}</TransparentButton>
           </div>
         </div>

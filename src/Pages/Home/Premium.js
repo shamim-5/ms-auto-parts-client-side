@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import PrimaryButton from "../Shared/PrimaryButton";
 
 const Premium = () => {
@@ -23,7 +24,9 @@ const Premium = () => {
         <hr className="text-[#bab1b1] pt-6" />
         <p>Phone*</p>
         <hr className="text-[#bab1b1] pt-6 pb-6" />
-        <PrimaryButton>Subscribe</PrimaryButton>
+        <Link to="signup">
+          <PrimaryButton>Subscribe</PrimaryButton>
+        </Link>
       </div>
     </div>
   );
