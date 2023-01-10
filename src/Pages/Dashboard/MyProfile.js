@@ -27,7 +27,7 @@ const MyProfile = () => {
       phone: data.phone,
     };
 
-    fetch("https://afternoon-woodland-49409.herokuapp.com/order", {
+    fetch("https://afternoon-woodland-49409.vercel.app/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -4,7 +4,7 @@ const AddedProduct = ({ products, setProducts, product, children }) => {
   const { _id, name, img, details, quantity, available, price } = product;
 
   const deleteProduct = (id) => {
-    const url = `https://afternoon-woodland-49409.herokuapp.com/product/${id}`;
+    const url = `https://afternoon-woodland-49409.vercel.app/product/${id}`;
     fetch(url, {
       method: "DELETE",
     })

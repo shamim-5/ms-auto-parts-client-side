@@ -11,7 +11,7 @@ const useOrders = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`https://afternoon-woodland-49409.herokuapp.com/order?email=${user.email}`, {
+      fetch(`https://afternoon-woodland-49409.vercel.app/order?email=${user.email}`, {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,

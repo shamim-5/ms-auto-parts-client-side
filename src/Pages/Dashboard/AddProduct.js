@@ -7,7 +7,7 @@ const AddProduct = () => {
 
   const onSubmit = (data) => {
     // console.log(data);
-    const url = `https://afternoon-woodland-49409.herokuapp.com/product`;
+    const url = `https://afternoon-woodland-49409.vercel.app/product`;
     fetch(url, {
       method: "POST",
       headers: {

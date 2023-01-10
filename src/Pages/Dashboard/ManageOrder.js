@@ -9,7 +9,7 @@ const ManageOrder = () => {
     isLoading,
     refetch,
   } = useQuery("orders", () =>
-    fetch(` https://afternoon-woodland-49409.herokuapp.com/orders`, {
+    fetch(` https://afternoon-woodland-49409.vercel.app/orders`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,
