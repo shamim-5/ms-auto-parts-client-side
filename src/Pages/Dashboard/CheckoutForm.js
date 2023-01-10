@@ -14,7 +14,7 @@ const CheckoutForm = ({ order }) => {
   const { _id, orderPrice, name, email } = order;
 
   useEffect(() => {
-    fetch(" https://afternoon-woodland-49409.vercel.app/create-payment-intent", {
+    fetch(" https://ms-auto-parts-server-side.vercel.app/create-payment-intent", {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -69,7 +69,7 @@ const CheckoutForm = ({ order }) => {
         order: _id,
         transactionId: paymentIntent.id,
       };
-      fetch(` https://afternoon-woodland-49409.vercel.app/order/${_id}`, {
+      fetch(` https://ms-auto-parts-server-side.vercel.app/order/${_id}`, {
         method: "PATCH",
         headers: {
           "content-type": "application/json",

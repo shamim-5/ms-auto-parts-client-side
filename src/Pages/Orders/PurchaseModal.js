@@ -23,7 +23,7 @@ const PurchaseModal = ({ user, name, setManageState, orderQuantity, orderPrice }
       phone: data.phone,
     };
 
-    fetch("https://afternoon-woodland-49409.vercel.app/order", {
+    fetch("https://ms-auto-parts-server-side.vercel.app/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",

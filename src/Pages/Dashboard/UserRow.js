@@ -5,7 +5,7 @@ const UserRow = ({ user, refetch }) => {
   const { email, role } = user;
 
   const makeAdmin = () => {
-    fetch(`https://afternoon-woodland-49409.vercel.app/user/admin/${email}`, {
+    fetch(`https://ms-auto-parts-server-side.vercel.app/user/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

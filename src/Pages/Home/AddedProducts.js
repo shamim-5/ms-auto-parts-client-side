@@ -5,7 +5,7 @@ const AddedProducts = ({ children }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("https://afternoon-woodland-49409.vercel.app/product")
+    fetch("https://ms-auto-parts-server-side.vercel.app/product")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
