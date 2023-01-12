@@ -25,7 +25,7 @@ const MyReview = () => {
       react: data.ratings,
     };
 
-    fetch("https://ms-auto-parts-server-side.vercel.app/review", {
+    fetch("https://ms-auto-parts-server.onrender.com/review", {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -11,7 +11,7 @@ const useUserReview = () => {
 
   useEffect(() => {
     if (user) {
-      fetch(`https://ms-auto-parts-server-side.vercel.app/review?email=${user.email}`, {
+      fetch(`https://ms-auto-parts-server.onrender.com/review?email=${user.email}`, {
         method: "GET",
         headers: {
           authorization: `Bearer ${localStorage.getItem("accessToken")}`,

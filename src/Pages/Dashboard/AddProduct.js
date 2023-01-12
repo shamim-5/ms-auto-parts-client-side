@@ -7,7 +7,7 @@ const AddProduct = () => {
 
   const onSubmit = (data) => {
     // console.log(data);
-    const url = `https://ms-auto-parts-server-side.vercel.app/product`;
+    const url = `https://ms-auto-parts-server.onrender.com/product`;
     fetch(url, {
       method: "POST",
       headers: {

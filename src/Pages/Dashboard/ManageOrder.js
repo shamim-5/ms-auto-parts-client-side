@@ -9,7 +9,7 @@ const ManageOrder = () => {
     isLoading,
     refetch,
   } = useQuery("orders", () =>
-    fetch(` https://ms-auto-parts-server-side.vercel.app/orders`, {
+    fetch(` https://ms-auto-parts-server.onrender.com/orders`, {
       method: "GET",
       headers: {
         authorization: `Bearer ${localStorage.getItem("accessToken")}`,

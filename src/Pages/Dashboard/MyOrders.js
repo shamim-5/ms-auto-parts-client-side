@@ -8,7 +8,7 @@ const MyOrders = () => {
   const cancelOrder = (id) => {
     console.log(id);
 
-    const url = `https://ms-auto-parts-server-side.vercel.app/order/${id}`;
+    const url = `https://ms-auto-parts-server.onrender.com/order/${id}`;
     fetch(url, {
       method: "DELETE",
     })

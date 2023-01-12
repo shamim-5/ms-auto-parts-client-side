@@ -18,7 +18,7 @@ const Purchase = () => {
   const [manageState, setManageState] = useState(null);
 
   useEffect(() => {
-    fetch(`https://ms-auto-parts-server-side.vercel.app/service/${id}`)
+    fetch(`https://ms-auto-parts-server.onrender.com/service/${id}`)
       .then((res) => res.json())
       .then((data) => setService(data));
   }, []);

@@ -27,7 +27,7 @@ const MyProfile = () => {
       phone: data.phone,
     };
 
-    fetch("https://ms-auto-parts-server-side.vercel.app/order", {
+    fetch("https://ms-auto-parts-server.onrender.com/order", {
       method: "POST",
       headers: {
         "content-type": "application/json",
